@@ -3,36 +3,62 @@ body {
     background: black;
     color: white;
     text-align: center;
-    font-family: Arial, sans-serif;
-}
-
-h1 {
-    margin: 10px;
-}
-
-#score {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-canvas {
-    border: 2px solid white;
-    background: #000020;
-}
-body {
-    margin: 0;
-    background: black;
-    color: white;
-    text-align: center;
     font-family: Arial;
 }
 
+canvas {
+    border: 2px solid white;
+    background: #000015;
+}
+
 #score {
     font-size: 24px;
     margin: 10px;
 }
 
-canvas {
+#auth {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#auth button {
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+
+#userBox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: lime;
+    font-size: 20px;
+}
+
+#logoutBtn {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    display: none;
+}
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #111;
+    padding: 20px;
     border: 2px solid white;
-    background: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#popup input {
+    padding: 10px;
+}
+
+.hidden {
+    display: none !important;
 }
