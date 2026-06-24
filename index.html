@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>shokirovich games</title>
+    <title>Space Shooter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>shokirovich games 🚀</h1>
-    <div id="score">Score: 0</div>
 
-    <canvas id="game" width="500" height="700"></canvas>
+<div id="auth">
+    <button onclick="showLogin()">Login</button>
+    <button onclick="showSignup()">Sign Up</button>
+</div>
 
-    <script src="script.js"></script>
+<div id="userBox"></div>
+
+<button id="logoutBtn" onclick="logout()">
+    Logout
+</button>
+
+<div id="popup" class="hidden">
+    <h2 id="title">Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="submitAuth()">Kirish</button>
+    <button onclick="closePopup()">Yopish</button>
+</div>
+
+<div id="score">Score: 0</div>
+
+<canvas id="game" width="500" height="700"></canvas>
+
+<script src="script.js"></script>
+
 </body>
 </html>
